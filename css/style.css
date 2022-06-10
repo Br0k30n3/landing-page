@@ -1,12 +1,38 @@
 /* landing-page style.css */
 
-/*Dark Background Color ( Header and Footer )      #1F2937 */
-/*Hero Main(48px extra-Bold ) and Logo Font (24px) #F9FAF8 */
-/*Hero Secondary (18px)                            #E5E7EB */
-/*                                                         */
-/*Button and Call to Action color                  #3882F6 */
-/*Information Header text (36px extra-bold)        #1F2937 */
-/*                                                         */
-/*Qoute Section background Color                   #E5E7EB */
-/*Qoute Text (36px light italic)                   #1F2937 */ 
+/*----------------------------------------------------------*/
+/* Dark Background Color ( Header and Footer )      #1F2937 */
+/* Hero Main(48px extra-Bold ) and Logo Font (24px) #F9FAF8 */
+/* Hero Secondary (18px)                            #E5E7EB */
+/*                                                          */
+/* Button and Call to Action color                  #3882F6 */
+/* Information Header text (36px extra-bold)        #1F2937 */
+/*                                                          */
+/* Quote Section background Color                   #E5E7EB */
+/* Quote Text (36px light italic)                   #1F2937 */ 
+/*----------------------------------------------------------*/
 
+:root {
+    --page-background-color: #d8d6d6;
+    --main-background-color: #ffffff;
+    --hero-background-color: #1F2937;
+    --button-background-color: #3882F6;
+    --cta-background-color: #3882F6;
+    --primary-text-light: #F9FAF8;
+    --secondary-text-light: #E5E7EB;
+    --quote-background-color: #E5E7EB;
+    --qoute-text-color: #1F2937;
+    background-color: var(--page-background-color);
+}
+
+body {
+    height: 100vh;
+    width: 960px;
+    background-color: var(--main-background-color);
+    align-content: center;
+    margin: 0 auto;
+}
+
+footer {
+    bottom: 0px;
+}
