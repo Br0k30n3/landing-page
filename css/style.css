@@ -13,7 +13,7 @@
 /*----------------------------------------------------------*/
 
 :root {
-    --page-background-color: #dce7f5;
+    --page-background-color: #f5f9fd;
     --main-background-color: #ffffff;
     --hero-background-color: #1F2937;
     --button-background-color: #3882F6;
@@ -111,13 +111,30 @@ nav {
 .hero-cta h1 {
     font-size: 48px;
     color:var(--primary-text-light);
-    font-weight: 800pc;
+    font-weight: 800;
+    line-height: 45px;
 }
 
 .hero-image img {
     display: flex;
     width: 400px;
     height: 250px;
+}
+
+.hero-cta-button { 
+    display: block;
+    text-align: center;
+    width: 100px;
+    border: none;
+    background: #3882f6;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 /* Information Section */
@@ -153,6 +170,7 @@ nav {
     width: 150px;
     height: 100px;
 }
+/* Quote */
 
 #quote {
     background-color: var(--quote-background-color);
@@ -168,13 +186,67 @@ nav {
     text-align: right;
 }
 
+/* Call to action */
+
+#calltoaction {
+    height: auto;
+    padding: 50px;
+}
+
+.cta {
+    max-width: 900px;
+    height: 150px;
+    background-color: var(--cta-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:auto;
+    padding: 50px;
+}
+
+.cta a{
+    text-decoration: none;
+    color: var(--secondary-text-light);
+}
+
+.cta-text h3 {
+    color: var(--primary-text-light);
+    font-weight: bold;
+}
+
+.cta-text p {
+    color: var(--secondary-text-light);
+    font-weight: 300;
+}
+
+.cta-button { 
+    display: block;
+    text-align: center;
+    width: 100px;
+    border:1px solid white;
+    background: #3882f6;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    color: var(--cta-background-color);
+    background-color: var(--primary-text-light);
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+
 footer{
     position: static;
     bottom: 0;
     height: 40px;
-    width: 960px;
+    max-width: 960px;
     text-align: center;
     background: var(--hero-background-color);
     color: var(--secondary-text-light);
-    padding-top: 10px;
+    padding:10px;
 }
